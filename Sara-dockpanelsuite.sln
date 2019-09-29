@@ -32,7 +32,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B70663F3-4599-4E26-A6D2-2F65F1FD0108}"
 	ProjectSection(SolutionItems) = preProject
 		DockPanelSuite.nuspec = DockPanelSuite.nuspec
-		WinFormsUI\Sara-dockpanelsuite.nuspec = WinFormsUI\Sara-dockpanelsuite.nuspec
+		WinFormsUI\license.txt = WinFormsUI\license.txt
+		Sara-dockpanelsuite.nuspec = Sara-dockpanelsuite.nuspec
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGet Empty", "NuGet Empty\NuGet Empty.csproj", "{F4572300-5072-476D-BC39-97B03D2868BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C75532C4-765B-418E-B09B-46D36B2ABDB1} = {C75532C4-765B-418E-B09B-46D36B2ABDB1}
 	EndProjectSection
 EndProject
 Global
@@ -85,6 +91,10 @@ Global
 		{B51EC09A-F8BE-4B5A-BD07-0F4489075A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B51EC09A-F8BE-4B5A-BD07-0F4489075A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B51EC09A-F8BE-4B5A-BD07-0F4489075A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4572300-5072-476D-BC39-97B03D2868BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4572300-5072-476D-BC39-97B03D2868BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4572300-5072-476D-BC39-97B03D2868BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4572300-5072-476D-BC39-97B03D2868BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
