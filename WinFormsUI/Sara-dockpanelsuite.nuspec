@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>Sara-dockpanelsuite</id>
+    <version>3.1.0.100</version>
+    <title>dockpanelsuite by Weifen Luo</title>
+    <authors>Weifen Luo, Sara LaFleur</authors>
+    <owners>Weifen Luo</owners>
+    <projectUrl>https://github.com/saralafleur/dockpanelsuite</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/saralafleur/Sara-Common/master/Avatar4.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fork of dockpanelsuite by Weifen Luo with small modifications by Sara LaFleur.</description>
+    <releaseNotes>Modification Release.</releaseNotes>
+    <copyright>GNU License</copyright>
+    <tags></tags>
+    <license type="file">LICENSE.txt</license>
+    <repository type="git" url="https://github.com/saralafleur/dockpanelsuite.git"/>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Accessibility" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.configuration" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="net4-client" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework="net4-client" />
+    </frameworkAssemblies>
+  </metadata>
+
+  <files>
+    <!-- Sara.NETFramework.Logging.Writers -->
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.pdb" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll" target="lib\net4-client" />
+    <file src="bin\Release\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.pdb" target="lib\net4-client" />
+
+    <!-- License -->
+    <file src="LICENSE.txt" target="" />
+  </files>
+</package>
