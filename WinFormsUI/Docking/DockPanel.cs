@@ -925,7 +925,12 @@ namespace WeifenLuo.WinFormsUI.Docking
                 SetMdiClient();
         }
 
-        private Rectangle SystemMdiClientBounds
+        #region Sara
+        /// <summary>
+        /// Changed SystemMdiClientBounds from private to public
+        /// </summary>
+        #endregion Sara
+        public Rectangle SystemMdiClientBounds
         {
             get
             {

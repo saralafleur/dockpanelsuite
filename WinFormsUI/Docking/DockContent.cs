@@ -260,6 +260,15 @@ namespace WeifenLuo.WinFormsUI.Docking
 
         public void Show(DockPanel dockPanel)
         {
+            #region Sara
+
+            if (InvokeRequired)
+            {
+                Invoke(new Action<DockPanel>(Show), dockPanel);
+                return;
+            }
+            #endregion Sara
+
             DockHandler.Show(dockPanel);
         }
 
