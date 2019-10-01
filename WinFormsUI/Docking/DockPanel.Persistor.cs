@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Globalization;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -297,6 +298,7 @@ namespace WeifenLuo.WinFormsUI.Docking
                 // DockWindows
                 xmlOut.WriteStartElement("DockWindows");
                 int dockWindowId = 0;
+                if (dockPanel.DockWindows != null)
                 foreach (DockWindow dw in dockPanel.DockWindows)
                 {
                     xmlOut.WriteStartElement("DockWindow");

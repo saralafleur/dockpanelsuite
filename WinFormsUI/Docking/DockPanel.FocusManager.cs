@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Diagnostics.CodeAnalysis;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
+using WeifenLuo.WinFormsUI.Docking.Win32;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

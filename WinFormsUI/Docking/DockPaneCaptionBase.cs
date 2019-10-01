@@ -1,6 +1,7 @@
 using System.Drawing;
 using System.Security.Permissions;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

@@ -1,21 +1,22 @@
 using System;
-using System.Drawing;
-using System.Windows.Forms;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
-using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
 
+namespace WeifenLuo.WinFormsUI.Docking
+{
 // To simplify the process of finding the toolbox bitmap resource:
 // #1 Create an internal class called "resfinder" outside of the root namespace.
 // #2 Use "resfinder" in the toolbox bitmap attribute instead of the control name.
 // #3 use the "<default namespace>.<resourcename>" string to locate the resource.
 // See: http://www.bobpowell.net/toolboxbitmap.htm
-internal class resfinder
-{
-}
+    internal class resfinder
+    {
+    }
 
-namespace WeifenLuo.WinFormsUI.Docking
-{
     /// <summary>
     /// Deserialization handler of layout file/stream.
     /// </summary>
@@ -82,10 +83,10 @@ namespace WeifenLuo.WinFormsUI.Docking
         /// For Backgroundimages: Set your prefered Image, then set the DockBackColor and the BackColor to the same Color (Control)
         /// </summary>
         [Description("Determines the color with which the client rectangle will be drawn.\r\n" +
-            "If this property is used instead of the BackColor it will not have any influence on the borders to the surrounding controls (DockPane).\r\n" +
-            "The BackColor property changes the borders of surrounding controls (DockPane).\r\n" +
-            "Alternatively both properties may be used (BackColor to draw and define the color of the borders and DockBackColor to define the color of the client rectangle).\r\n" +
-            "For Backgroundimages: Set your prefered Image, then set the DockBackColor and the BackColor to the same Color (Control).")]
+                     "If this property is used instead of the BackColor it will not have any influence on the borders to the surrounding controls (DockPane).\r\n" +
+                     "The BackColor property changes the borders of surrounding controls (DockPane).\r\n" +
+                     "Alternatively both properties may be used (BackColor to draw and define the color of the borders and DockBackColor to define the color of the client rectangle).\r\n" +
+                     "For Backgroundimages: Set your prefered Image, then set the DockBackColor and the BackColor to the same Color (Control).")]
         public Color DockBackColor
         {
             get
@@ -991,7 +992,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             if (this.DocumentStyle == DocumentStyle.DockingMdi)
                 UpdateWindowRegion_ClipContent();
             else if (this.DocumentStyle == DocumentStyle.DockingSdi ||
-                this.DocumentStyle == DocumentStyle.DockingWindow)
+                     this.DocumentStyle == DocumentStyle.DockingWindow)
                 UpdateWindowRegion_FullDocumentArea();
             else if (this.DocumentStyle == DocumentStyle.SystemMdi)
                 UpdateWindowRegion_EmptyDocumentArea();

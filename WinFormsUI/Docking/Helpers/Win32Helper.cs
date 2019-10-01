@@ -1,8 +1,9 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking.Win32;
 
-namespace WeifenLuo.WinFormsUI.Docking
+namespace WeifenLuo.WinFormsUI.Docking.Helpers
 {
     public static class Win32Helper
     {

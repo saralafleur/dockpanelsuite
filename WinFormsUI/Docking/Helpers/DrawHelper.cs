@@ -2,7 +2,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace WeifenLuo.WinFormsUI.Docking
+namespace WeifenLuo.WinFormsUI.Docking.Helpers
 {
     public static class DrawHelper
     {

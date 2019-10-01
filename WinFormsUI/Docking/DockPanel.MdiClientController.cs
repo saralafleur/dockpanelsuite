@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.ComponentModel.Design;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
+using WeifenLuo.WinFormsUI.Docking.Win32;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

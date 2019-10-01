@@ -1,6 +1,6 @@
 using System.Resources;
 
-namespace WeifenLuo.WinFormsUI.Docking
+namespace WeifenLuo.WinFormsUI.Docking.Helpers
 {
     internal static class ResourceHelper
     {

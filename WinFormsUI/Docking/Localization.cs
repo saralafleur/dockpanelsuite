@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

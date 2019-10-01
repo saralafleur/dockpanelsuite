@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
+using WeifenLuo.WinFormsUI.Docking.Win32;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -140,7 +142,10 @@ namespace WeifenLuo.WinFormsUI.Docking
             }
         }
 
-        private bool IsActiveContentHandler
+        #region Sara
+        // Moved from Private to Public
+        public bool IsActiveContentHandler
+        #endregion Sara
         {
             get { return Pane != null && Pane.ActiveContent != null && Pane.ActiveContent.DockHandler == this; }
         }

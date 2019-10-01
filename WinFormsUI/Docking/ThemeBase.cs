@@ -6,6 +6,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
