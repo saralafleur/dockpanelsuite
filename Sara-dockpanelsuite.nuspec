@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
   <metadata>
     <id>Sara-dockpanelsuite</id>
-    <version>3.1.0.100</version>
+    <version>3.1.0.105</version>
     <title>dockpanelsuite by Weifen Luo</title>
     <authors>Weifen Luo, Sara LaFleur</authors>
     <owners>Weifen Luo</owners>

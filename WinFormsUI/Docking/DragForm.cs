@@ -48,16 +48,16 @@ namespace WeifenLuo.WinFormsUI.Docking
             get
             {
                 CreateParams createParams = base.CreateParams;
-                createParams.ExStyle |= (int)(Win32.WindowExStyles.WS_EX_NOACTIVATE | Win32.WindowExStyles.WS_EX_TOOLWINDOW);
+                createParams.ExStyle |= (int)(WindowExStyles.WS_EX_NOACTIVATE | WindowExStyles.WS_EX_TOOLWINDOW);
                 return createParams;
             }
         }
 
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == (int)Win32.Msgs.WM_NCHITTEST)
+            if (m.Msg == (int)Msgs.WM_NCHITTEST)
             {
-                m.Result = (IntPtr)Win32.HitTest.HTTRANSPARENT;
+                m.Result = (IntPtr)HitTest.HTTRANSPARENT;
                 return;
             }
 

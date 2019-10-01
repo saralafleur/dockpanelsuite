@@ -2,7 +2,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace WeifenLuo.WinFormsUI.Docking.Helpers
+// ReSharper disable once CheckNamespace
+namespace WeifenLuo.WinFormsUI.Docking
 {
     public static class DrawHelper
     {

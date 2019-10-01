@@ -1,6 +1,7 @@
 using System;
 
-namespace WeifenLuo.WinFormsUI.Docking.Win32
+// ReSharper disable once CheckNamespace
+namespace WeifenLuo.WinFormsUI.Docking
 {
     [Flags]
     internal enum FlagsSetWindowPos : uint

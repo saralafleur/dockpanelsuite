@@ -1,6 +1,7 @@
 using System.Resources;
 
-namespace WeifenLuo.WinFormsUI.Docking.Helpers
+// ReSharper disable once CheckNamespace
+namespace WeifenLuo.WinFormsUI.Docking
 {
     internal static class ResourceHelper
     {

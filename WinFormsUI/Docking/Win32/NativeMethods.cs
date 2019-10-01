@@ -3,7 +3,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace WeifenLuo.WinFormsUI.Docking.Win32
+// ReSharper disable once CheckNamespace
+namespace WeifenLuo.WinFormsUI.Docking
 {
     internal static class NativeMethods
     {
@@ -49,7 +50,7 @@ namespace WeifenLuo.WinFormsUI.Docking.Win32
         public delegate IntPtr HookProc(int code, IntPtr wParam, IntPtr lParam);
 
         [DllImport("user32.dll")]
-        public static extern IntPtr SetWindowsHookEx(Win32.HookType code, HookProc func, IntPtr hInstance, int threadID);
+        public static extern IntPtr SetWindowsHookEx(HookType code, HookProc func, IntPtr hInstance, int threadID);
 
         [DllImport("user32.dll")]
         public static extern int UnhookWindowsHookEx(IntPtr hhook);

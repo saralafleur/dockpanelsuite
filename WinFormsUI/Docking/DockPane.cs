@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Security.Permissions;
 using System.Diagnostics.CodeAnalysis;
-using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -1219,7 +1218,7 @@ namespace WeifenLuo.WinFormsUI.Docking
         [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)]
         protected override void WndProc(ref Message m)
         {
-            if (m.Msg == (int)Win32.Msgs.WM_MOUSEACTIVATE)
+            if (m.Msg == (int)Msgs.WM_MOUSEACTIVATE)
                 Activate();
 
             base.WndProc(ref m);

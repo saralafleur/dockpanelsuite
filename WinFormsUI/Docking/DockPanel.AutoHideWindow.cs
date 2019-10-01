@@ -2,7 +2,6 @@ using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
-using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

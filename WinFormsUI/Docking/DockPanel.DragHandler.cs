@@ -1,7 +1,5 @@
 using System.Windows.Forms;
 using System.Drawing;
-using WeifenLuo.WinFormsUI.Docking.Helpers;
-using WeifenLuo.WinFormsUI.Docking.Win32;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -79,13 +77,13 @@ namespace WeifenLuo.WinFormsUI.Docking
             {
                 if (PatchController.EnableActiveXFix == false)
                 {
-                    if (m.Msg == (int)Win32.Msgs.WM_MOUSEMOVE)
+                    if (m.Msg == (int)Msgs.WM_MOUSEMOVE)
                         OnDragging();
-                    else if (m.Msg == (int)Win32.Msgs.WM_LBUTTONUP)
+                    else if (m.Msg == (int)Msgs.WM_LBUTTONUP)
                         EndDrag(false);
-                    else if (m.Msg == (int)Win32.Msgs.WM_CAPTURECHANGED)
+                    else if (m.Msg == (int)Msgs.WM_CAPTURECHANGED)
                         EndDrag(!Win32Helper.IsRunningOnMono);
-                    else if (m.Msg == (int)Win32.Msgs.WM_KEYDOWN && (int)m.WParam == (int)Keys.Escape)
+                    else if (m.Msg == (int)Msgs.WM_KEYDOWN && (int)m.WParam == (int)Keys.Escape)
                         EndDrag(true);
                 }
 
@@ -96,13 +94,13 @@ namespace WeifenLuo.WinFormsUI.Docking
             {
                 if (PatchController.EnableActiveXFix == true)
                 {
-                    if (m.Msg == (int)Win32.Msgs.WM_MOUSEMOVE)
+                    if (m.Msg == (int)Msgs.WM_MOUSEMOVE)
                         OnDragging();
-                    else if (m.Msg == (int)Win32.Msgs.WM_LBUTTONUP)
+                    else if (m.Msg == (int)Msgs.WM_LBUTTONUP)
                         EndDrag(false);
-                    else if (m.Msg == (int)Win32.Msgs.WM_CAPTURECHANGED)
+                    else if (m.Msg == (int)Msgs.WM_CAPTURECHANGED)
                         EndDrag(!Win32Helper.IsRunningOnMono);
-                    else if (m.Msg == (int)Win32.Msgs.WM_KEYDOWN && (int)m.WParam == (int)Keys.Escape)
+                    else if (m.Msg == (int)Msgs.WM_KEYDOWN && (int)m.WParam == (int)Keys.Escape)
                         EndDrag(true);
                 }
 
@@ -119,7 +117,7 @@ namespace WeifenLuo.WinFormsUI.Docking
                     this.OnPreFilterMessage(ref m);
                 }
 
-                if (m.Msg == (int)Win32.Msgs.WM_CANCELMODE || m.Msg == (int)Win32.Msgs.WM_CAPTURECHANGED)
+                if (m.Msg == (int)Msgs.WM_CANCELMODE || m.Msg == (int)Msgs.WM_CAPTURECHANGED)
                     EndDrag(true);
 
                 base.WndProc(ref m);
@@ -154,7 +152,7 @@ namespace WeifenLuo.WinFormsUI.Docking
 
             protected sealed override bool OnPreFilterMessage(ref Message m)
             {
-                if ((m.Msg == (int)Win32.Msgs.WM_KEYDOWN || m.Msg == (int)Win32.Msgs.WM_KEYUP) &&
+                if ((m.Msg == (int)Msgs.WM_KEYDOWN || m.Msg == (int)Msgs.WM_KEYUP) &&
                     ((int)m.WParam == (int)Keys.ControlKey || (int)m.WParam == (int)Keys.ShiftKey))
                     OnDragging();
 

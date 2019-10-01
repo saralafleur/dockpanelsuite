@@ -5,7 +5,6 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Globalization;
-using WeifenLuo.WinFormsUI.Docking.Helpers;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {

@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
-
 namespace WeifenLuo.WinFormsUI.Docking
 {
     /// <include file='CodeDoc/AutoHideStripVS2003.xml' path='//CodeDoc/Class[@name="AutoHideStripVS2003"]/ClassDef/*'/>
